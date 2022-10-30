@@ -1,0 +1,28 @@
+input {
+    background-color: white;
+    border: 2px solid whitesmoke;
+    outline: none;
+    padding: 0.3rem 1rem;
+    border-radius: 40px;
+}
+
+.message-box {
+    width: 20rem;
+    height: 100px;
+    overflow-y: scroll;
+}
+
+.message-content {
+    background-color: #f2f6f8;
+    padding: 9px 5px;
+    border-radius: 4px 4px 4px 4px;
+    text-transform: capitalize;
+}
+
+.message-icon {
+    cursor: pointer;
+}
+
+.message-main {
+    z-index: 100;
+}

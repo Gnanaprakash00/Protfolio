@@ -1,0 +1,74 @@
+.toggle {
+    height: 100vh;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+}
+
+.route {
+    text-transform: capitalize;
+}
+
+.route-link {
+    font-size: 3rem;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #0f1b61;
+}
+
+.route-link:hover {
+    color: white;
+}
+
+.toggle-bar {
+    width: 97.5%;
+    height: 95vh;
+    background-color: #aadcec;
+    border-radius: 2px;
+    animation: color 0.6s 1 linear;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes color {
+    10% {}
+}
+
+.route-content {
+    padding: 2rem 0 0 0;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0 3rem;
+    width: 93%;
+    height: 50px;
+    position: relative;
+}
+
+.social-media .lines {
+    width: 90px;
+    height: 4px;
+    background-color: #8a17e2;
+}
+
+@media only screen and (max-width:1223px) {
+    .route-content {
+        visibility: hidden;
+        pointer-events: none;
+    }
+    .route-link {
+        font-size: 1.6rem;
+        font-weight: bold;
+        font-family: sans-serif;
+        color: #0f1b61;
+    }
+    .route-content {
+        padding: 0 0 0 0;
+    }
+}
